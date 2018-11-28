@@ -1121,4 +1121,3 @@ class PlayTTT:
 if __name__ == '__main__':
 
 	PlayTTT()
-
