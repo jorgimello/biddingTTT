@@ -743,7 +743,7 @@ class PlayTTT:
 
 		elif self.biddingType == 'd':
 			chipNo = self._queryChipCount()
-			agentChips = float(math.ceil(0.51953126*chipNo))
+			agentChips = float(math.ceil(0.5*chipNo))
 			self.chips = {X:chipNo-agentChips,O:agentChips}
 			
 			if self._queryStartWithTieBreakingChip():
@@ -1119,5 +1119,4 @@ class PlayTTT:
 
 
 if __name__ == '__main__':
-
 	PlayTTT()
